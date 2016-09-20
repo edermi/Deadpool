@@ -5,16 +5,54 @@ By the way, in the comics, the white boxes are Deadpool's crazy alternative inne
 
 Deadpool is a repository of various public white-box cryptographic implementations and their practical attacks.
 
-The DCA attacks are leveraged by Tracer and Daredevil projects, also available at https://github.com/SideChannelMarvels/,
-as outlined in the paper
+## Attacks
 
-Joppe W. Bos and Charles Hubain and Wil Michiels and Philippe Teuwen:  
-Differential Computation Analysis: Hiding your White-Box Designs is Not Enough  
-Cryptology ePrint Archive, Report 2015/753, IACR, 2015.  
-http://eprint.iacr.org/2015/753.pdf
+### [Differential Computation Analysis](README_dca.md)
 
+### [Differential Fault Analysis](README_dfa.md)
 
-Attacks presented in the paper were performed partly with a proprietary tool, that we are in the process of replacing by
-an opensource variant (Daredevil) in order to have a completely opensource toolchain.
-Therefore this repository doesn't contain yet all the attacks described in the paper.
-More will come soon, missing features will be implemented in Daredevil to support all described attacks.
+## White-box implementations
+
+### [Wyseur 2007 challenge](wbs_des_wyseur2007)
+
+A Linux binary implementing a DES.
+
+### [Hack.lu 2009 challenge](wbs_aes_hacklu2009)
+
+A Windows binary implementing an AES 128.
+
+### [Karroumi 2010 challenge](wbs_aes_karroumi2010)
+
+A Linux binary implementing an AES 128.
+
+### [SSTIC 2012 challenge](wbs_des_sstic2012)
+
+A Python serialized object implementing a DES.
+
+### [NoSuchCon 2013 challenge](wbs_aes_nsc2013)
+
+A Windows binary implementing an AES 128 with uncompensated external encodings.
+
+### [NoSuchCon 2013 variants](wbs_aes_nsc2013_variants)
+
+Variants of the NoSuchCon 2013 challenge, using the same white-box generator but compiled for Linux, without obfuscation and with compensated external encodings.
+
+### [PlaidCTF 2013 challenge](wbs_aes_plaidctf2013)
+
+A Linux binary implementing an AES 128.
+
+### [CHES 2015 challenge](wbs_aes_ches2015)
+
+A GameBoy ROM implementing an AES 128.
+
+### [OpenWhiteBox AES Chow](wbs_aes_openwhitebox_chow)
+
+An implementation of Chow written in Go, implementing an AES 128.
+
+### [OpenWhiteBox AES Xiao-Lai](wbs_aes_openwhitebox_xiaolai)
+
+An implementation of Xiao-Lai written in Go, implementing an AES 128.
+
+### [CHES 2016 challenge](wbs_aes_ches2016)
+
+A Linux binary (and source) implementing an AES 128.
